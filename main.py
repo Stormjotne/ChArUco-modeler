@@ -3,18 +3,16 @@ from pathlib import Path
 import numpy as np
 import cv2, PIL, os
 from cv2 import aruco
-from mpl_toolkits.mplot3d import Axes3D
 import matplotlib
-import matplotlib.pyplot as plt
-import matplotlib as mpl
-from PIL import ImageEnhance
 from PIL import Image
-import pandas as pd
 
-WIDTH, HEIGHT = 128, 72
-TRANSFORM_MAGNITUDE = 10
 INPUT_ROOT_DIR = "E:/Datasets/EUVP_Gray"
 OUTPUT_ROOT_DIR = "E:/Datasets/EUVP_ChArUco"
+
+#   ChArUco size
+WIDTH, HEIGHT = 128, 72
+#   Pixels to skew
+TRANSFORM_MAGNITUDE = 10
 #   Colormap for making black and white more grey-ish
 gray_colormap = matplotlib.colors.LinearSegmentedColormap.from_list('', ['#2d2d2d', '#d6d6d6'])
 #   Black solid background
@@ -60,7 +58,7 @@ def displace(back_width, back_height, fore_width, fore_height):
 
 def skew(width, height, magnitude, mode='random'):
     """
-
+    Skew the ChArUco in 4 different modes.
     :param width:
     :param height:
     :param magnitude:
