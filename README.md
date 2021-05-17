@@ -1,5 +1,6 @@
 # ChArUco-modeler
-Synthesise datasets with ChArUco boards
+Synthesise datasets with ChArUco boards.
+ChArUcofied version of the Grayscale EUVP dataset:
 https://drive.google.com/drive/folders/1WM-HvqPSX96H9DBnisIXmR4O_9zGh6z-?usp=sharing
 
 ![alt text](https://github.com/Stormjotne/ChArUco-modeler/blob/main/examples/264287_00007863.jpg "Img1")
